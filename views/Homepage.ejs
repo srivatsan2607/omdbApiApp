@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+
+<h1>
+	Welcome to DD Movies search Panel
+</h1>
+
+<div class="one container">
+	
+	<form action="/Details" method="POST">
+		<label for="title">Title: </label><input id="title" name="title" type="text">
+		<label>Movie <input type="radio" id="movies" name="type" value="movie"></label>
+		<label>Series <input type="radio" id="series"name="type" value="series"></label>
+		<label>Show all <input type="checkbox" name="showall" id="showall"></label>
+		<br>
+		<button type="submit">
+			Search
+		</button>
+	</form>
+</div>
+
+
+<%- include("partials/footer") %>
